@@ -61,6 +61,7 @@ list_files() {
 
     # 遍历目录中的文件和目录，包括隐藏的文件和目录
     for item in "$path"/.* "$path"/*; do
+
         if [ "$item" = "$path"/. ] || [ "$item" = "$path"/.. ]; then
             continue
         fi
